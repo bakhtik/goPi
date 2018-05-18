@@ -9,7 +9,7 @@ import (
 const (
 	MCP23S17_MODE  = 0
 	MCP23S17_BPW   = 8
-	MCP23S17_SPEED = 1000000
+	MCP23S17_SPEED = 10000000
 )
 
 //	Microchip's MCP23S17: A 16-Bit I/O Expander with Serial Interface.
