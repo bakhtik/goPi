@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/luismesas/goPi/MCP23S17"
-	"github.com/luismesas/goPi/spi"
 	"log"
 	"time"
+
+	"github.com/bakhtik/goPi/MCP23S17"
+	"github.com/bakhtik/goPi/spi"
 )
 
 func main() {

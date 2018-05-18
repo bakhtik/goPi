@@ -2,13 +2,14 @@ package MCP23S17
 
 import (
 	"fmt"
-	"github.com/luismesas/goPi/spi"
+
+	"github.com/bakhtik/goPi/spi"
 )
 
 const (
 	MCP23S17_MODE  = 0
 	MCP23S17_BPW   = 8
-	MCP23S17_SPEED = 10000000
+	MCP23S17_SPEED = 32000000
 )
 
 //	Microchip's MCP23S17: A 16-Bit I/O Expander with Serial Interface.
@@ -182,7 +183,7 @@ func (mcp *MCP23S17) WriteBit(data byte, bit_num uint, address byte) {
 func (mcp *MCP23S17) ClearInterrupts(port int) {
 	var address byte
 	address = INTCAPA
-	if port == GPIOA {
+	if port != GPIOA {
 		address = INTCAPB
 	}
 	mcp.Read(address)

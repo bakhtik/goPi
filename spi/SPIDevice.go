@@ -2,9 +2,10 @@ package spi
 
 import (
 	"fmt"
-	"github.com/luismesas/goPi/ioctl"
 	"os"
 	"unsafe"
+
+	"github.com/bakhtik/goPi/ioctl"
 )
 
 const SPIDEV = "/dev/spidev"

@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/luismesas/goPi/piface"
-	"github.com/luismesas/goPi/spi"
 	"time"
+
+	"github.com/bakhtik/goPi/piface"
+	"github.com/bakhtik/goPi/spi"
 )
 
 func main() {
